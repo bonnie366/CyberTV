@@ -4,7 +4,7 @@
   "sites": [
     {
       "key": "Douban",
-      "name": "修复强更修复豆瓣，新公众号【太太太硬了】",
+      "name": "豆瓣热播 | 饭太硬核心",
       "type": 3,
       "api": "csp_DouDouGuard",
       "indexes": 1,
@@ -14,7 +14,7 @@
     },
     {
       "key": "MDrive",
-      "name": "🗂我的云盘➖我配置",
+      "name": "🗂我的云盘➖配置",
       "type": 3,
       "api": "csp_MyDriveGuard",
       "changeable": 0,
@@ -24,7 +24,7 @@
         "type": "oval"
       },
       "ext": {
-        "Cloud-drive": "tvfan/Cloud-drive.txt"
+        "Cloud-drive": "http://www.饭太硬.com/tv/tvfan/Cloud-drive.txt"
       }
     },
     {
@@ -37,7 +37,7 @@
       "quickSearch": 1,
       "changeable": 0,
       "ext": {
-        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "Cloud-drive": "http://www.饭太硬.com/tv/tvfan/Cloud-drive.txt",
         "from": "4k|auto"
       }
     },
@@ -100,7 +100,7 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": {
-        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "Cloud-drive": "http://www.饭太硬.com/tv/tvfan/Cloud-drive.txt",
         "from": "4k|auto"
       }
     },
@@ -370,7 +370,7 @@
       "quickSearch": 1,
       "changeable": 0,
       "ext": {
-        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "Cloud-drive": "http://www.饭太硬.com/tv/tvfan/Cloud-drive.txt",
         "from": "4k|auto",
         "yiSoCookie": "satoken=4437cb8c-a260-411b-9a0d-1fa622ab422f"
       }
@@ -399,6 +399,15 @@
       "searchable": 1,
       "quickSearch": 0,
       "changeable": 0
+    },
+    {
+      "key": "cc",
+      "name": "请勿相信视频中广告",
+      "type": 3,
+      "api": "csp_XPathGuard",
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 0
     }
   ],
   "logo": "https://bdcache1-f1.v3mh.com/image/25-12-16/6941612717007.gif",
@@ -411,13 +420,49 @@
       "ua": "bingcha/1.1(mianfeifenxiang)"
     },
     {
-      "name": "直播源(建议开启V6网络)",
+      "name": "develop202",
+      "type": 0,
+      "url": "https://gh.llkk.cc/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+      "playerType": 2,
+      "epg": "http://epg.51ymt.top:8000/api/diyp/?ch={name}&date={date}"
+    },
+    {
+      "name": "IPv6",
       "type": 0,
       "url": "https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u",
       "playerType": 2
+    },
+    {
+      "name": "虎牙一起看",
+      "type": 0,
+      "url": "https://sub.ottiptv.cc/huyayqk.m3u",
+      "playerType": 2,
+      "timeout": 10,
+      "ua": "okHttp/Mod-1.4.0.0"
+    },
+    {
+      "name": "斗鱼一起看",
+      "type": 0,
+      "url": "https://sub.ottiptv.cc/douyuyqk.m3u",
+      "playerType": 2,
+      "timeout": 10,
+      "ua": "okHttp/Mod-1.4.0.0"
+    },
+    {
+      "name": "B站直链",
+      "type": 0,
+      "url": "https://sub.ottiptv.cc/bililive.m3u",
+      "playerType": 2,
+      "timeout": 10,
+      "ua": "okHttp/Mod-1.4.0.0"
+    },
+    {
+      "name": "YY轮播",
+      "type": 0,
+      "url": "https://sub.ottiptv.cc/yylunbo.m3u",
+      "playerType": 2,
+      "timeout": 10,
+      "ua": "okHttp/Mod-1.4.0.0"
     }
   ]
-
 }
-
-
