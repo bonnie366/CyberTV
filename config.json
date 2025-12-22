@@ -413,10 +413,10 @@
   "logo": "https://bdcache1-f1.v3mh.com/image/25-12-16/6941612717007.gif",
   "lives": [
     {
-      "name": "develop202",
+      "name": "咪咕直播",
       "type": 0,
-      "url": "https://gh.llkk.cc/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
-      "playerType": 2,
+      "url": "https://raw.githubusercontent.com/develop202/migu_video/main/interface.txt",
+      "ua": "okhttp/3.15",
       "epg": "http://epg.51ymt.top:8000/api/diyp/?ch={name}&date={date}"
     },
     {
@@ -425,6 +425,7 @@
       "url": "https://bc.188766.xyz/?ip=&mishitong=true&mima=mianfeibuhuaqian&json=true",
       "timeout": 10,
       "ua": "bingcha/1.1(mianfeifenxiang)"
+      "playerType": 2
     },
     {
       "name": "IPv6",
@@ -466,6 +467,7 @@
     }
   ]
 }
+
 
 
 
