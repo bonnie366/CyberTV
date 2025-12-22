@@ -3,14 +3,13 @@
 这是一个基于 **饭太硬 (FanTaiYing)** 核心 Jar 包构建的 TVBox 影视接口配置仓库。
 主打高清、稳定、无广告，集成了全网优质的点播与直播资源。
 
-## 🚀 订阅地址 (配置链接)
 
-请在 TVBox 或支持多源的影视软件中输入以下任意一个链接：
+### 🚀 订阅地址 (配置链接)
 
-| 线路类型 | 链接地址 (点击复制) | 说明 |
-| :--- | :--- | :--- |
-| **推荐线路 (稳定)** | `https://ghproxy.net/https://raw.githubusercontent.com/bonnie366/CyberTV/main/config.json` | **首选**，走代理加速，无缓存，更新即时生效。 |
-| **CDN 加速 (备用)** | `https://cdn.jsdelivr.net/gh/bonnie366/CyberTV@main/config.json` | 速度快，但可能有缓存延迟，更新后需等待生效。 |
+| 线路说明 | 完整链接 (请直接复制填入 TVBox) |
+| :--- | :--- |
+| **🚀 推荐线路 (GHProxy)**<br>特点：稳定、无缓存，更新后即时生效。 | `https://ghproxy.net/https://raw.githubusercontent.com/bonnie366/CyberTV/main/config.json` |
+| **⚡ 备用线路 (CDN)**<br>特点：速度快，但可能存在缓存延迟。 | `https://cdn.jsdelivr.net/gh/bonnie366/CyberTV@main/config.json` |
 
 > **提示**：如果遇到配置加载失败，请尝试在 TVBox 设置中“清理缓存”后重新加载。
 
