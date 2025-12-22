@@ -1,5 +1,5 @@
 {
-  "spider": "https://cdn.jsdelivr.net/gh/bonnie366/cybertv@main/spider.jar",
+  "spider": "https://cdn.jsdelivr.net/gh/bonnie366/cybertv@main/jar/custom_spider.jar",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "sites": [
     {
@@ -417,4 +417,5 @@
       "playerType": 2
     }
   ]
+
 }
