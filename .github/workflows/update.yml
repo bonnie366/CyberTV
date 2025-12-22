@@ -1,0 +1,36 @@
+name: 自动更新直播源
+
+# 触发条件：
+on:
+  schedule:
+    # 每天北京时间早上 6:00 运行 (UTC时间 22:00)
+    - cron: '0 22 * * *'
+  # 允许手动点击按钮运行
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v3
+
+      - name: 创建目录 (如果不存在)
+        run: mkdir -p live
+
+      - name: 下载最新直播源 (引用范明明大佬源)
+        run: |
+          # 这里我们下载范明明的 IPv6 源，重命名为 my_live.m3u 保存到 live 文件夹
+          wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -O live/my_live.m3u
+
+      - name: 提交更改
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add live/my_live.m3u
+          # 如果文件有变化才提交，没变化就不报错
+          git commit -m "Auto update live source" || exit 0
+          git push
