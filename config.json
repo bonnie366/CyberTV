@@ -418,6 +418,7 @@
       "url": "https://raw.githubusercontent.com/develop202/migu_video/main/interface.txt",
       "ua": "okhttp/3.15",
       "epg": "http://epg.51ymt.top:8000/api/diyp/?ch={name}&date={date}"
+      "playerType": 2
     },
     {
       "name": "写鸭",
@@ -467,6 +468,7 @@
     }
   ]
 }
+
 
 
 
