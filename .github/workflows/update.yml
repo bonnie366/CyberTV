@@ -23,8 +23,8 @@ jobs:
 
       - name: 下载最新直播源 (引用范明明大佬源)
         run: |
-          # 这里我们下载范明明的 IPv6 源，重命名为 my_live.m3u 保存到 live 文件夹
-          wget https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u -O live/my_live.m3u
+          # 这里我们下载vbskycn的 IPv4 源，重命名为 my_live.m3u 保存到 live 文件夹
+          wget https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u -O live/my_live.m3u
 
       - name: 提交更改
         run: |
